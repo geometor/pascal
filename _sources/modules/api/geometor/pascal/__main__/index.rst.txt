@@ -1,0 +1,27 @@
+geometor.pascal.__main__
+========================
+
+.. py:module:: geometor.pascal.__main__
+
+.. autoapi-nested-parse::
+
+   Command-line interface for ``geometor.pascal``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.pascal.__main__.main
+
+
+Module Contents
+---------------
+
+.. py:function:: main(argv: list[str] | None = None) -> int
+
+   Main CLI entrypoint for geometor.pascal.
+
+

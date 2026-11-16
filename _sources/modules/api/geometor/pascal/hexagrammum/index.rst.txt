@@ -1,0 +1,337 @@
+geometor.pascal.hexagrammum
+===========================
+
+.. py:module:: geometor.pascal.hexagrammum
+
+.. autoapi-nested-parse::
+
+   Symbolic DAG constructions and combinatorics for Blaise Pascal's *Hexagrammum Mysticum* (1640).
+
+   Generalizes Pappus's Hexagon Theorem from a degenerate line-pair $a \cup b$ to six
+   points inscribed on a smooth conic $\mathcal{C}$ (circle or ellipse):
+
+   - **Pascal's Mystic Hexagram** (*Essai pour les coniques*, Feb. 1640): for any cyclic
+     6-tuple $\langle P_{c_0}, P_{c_1}, P_{c_2}, P_{c_3}, P_{c_4}, P_{c_5} \rangle$ on a conic,
+     opposite side intersections $M_{03}, M_{14}, M_{25}$ lie on a single **Pascal line**.
+   - **Bi-Triangle :math:`S_3` Steiner Family**: partitioning the 6 conic vertices into two
+     complementary triangles $\triangle_A$ and $\triangle_B$ generates 6 alternating hexagons
+     whose 3 even (:math:`A_3`) Pascal lines concur at :math:`G_+` and whose 3 odd
+     (:math:`S_3 \setminus A_3`) Pascal lines concur at :math:`G_-`—directly generalizing
+     Pappus's two Star points :math:`(S_+, S_-)`!
+   - **Complete 60-Line *Hexagrammum Mysticum* Catalog**: exact projective enumeration of all
+     15 chords, 45 diagonal Pascal points, 60 Pascal lines, 20 Jakob Steiner points,
+     60 Thomas Kirkman points, and 15 Julius Plücker lines.
+   - **Universal Symbolic Proof & Golden Conic**: exact 6-parameter polynomial proof over
+     $\mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]$ and Golden Ratio conic perspectivities over
+     $\mathbb{Q}(\phi)$.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.pascal.hexagrammum.Cycle6
+   geometor.pascal.hexagrammum.Perm3
+   geometor.pascal.hexagrammum.PERMUTATIONS_S3
+   geometor.pascal.hexagrammum.PASCAL_PRESETS
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.pascal.hexagrammum.PascalPresetConfig
+   geometor.pascal.hexagrammum.PascalHexagonResult
+   geometor.pascal.hexagrammum.PascalSteinerFamilyResult
+   geometor.pascal.hexagrammum.HexagrammumMysticumCatalog
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.pascal.hexagrammum.get_pascal_preset
+   geometor.pascal.hexagrammum.canonical_hexagon_cycle
+   geometor.pascal.hexagrammum.construct_pascal_hexagon
+   geometor.pascal.hexagrammum.construct_pascal_steiner_family
+   geometor.pascal.hexagrammum.enumerate_hexagrammum_mysticum
+   geometor.pascal.hexagrammum.verify_pascal_symbolic
+
+
+Module Contents
+---------------
+
+.. py:data:: Cycle6
+
+.. py:data:: Perm3
+
+.. py:data:: PERMUTATIONS_S3
+   :type:  tuple[Perm3, ...]
+   :value: ((0, 1, 2), (1, 2, 0), (2, 0, 1), (0, 2, 1), (1, 0, 2), (2, 1, 0))
+
+
+.. py:class:: PascalPresetConfig
+
+   Exact coordinate preset for Pascal *Hexagrammum Mysticum* constructions.
+
+   :ivar name: Identifier key in :data:`PASCAL_PRESETS`.
+   :ivar title: Human-readable preset title.
+   :ivar description: Mathematical and historical significance of the preset.
+   :ivar points: Six exact points $(P_0, P_1, P_2, P_3, P_4, P_5)$ on the conic.
+   :ivar default_cycle: Default cyclic ordering of vertex indices ``0..5``.
+   :ivar center: Conic center $(x_0, y_0)$ for circle/ellipse rendering.
+   :ivar rx: Horizontal semi-axis $a$ of the carrier circle/ellipse.
+   :ivar ry: Vertical semi-axis $b$ of the carrier circle/ellipse.
+
+
+
+   .. py:attribute:: name
+      :type:  str
+
+
+   .. py:attribute:: title
+      :type:  str
+
+
+   .. py:attribute:: description
+      :type:  str
+
+
+   .. py:attribute:: points
+      :type:  tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
+
+
+   .. py:attribute:: default_cycle
+      :type:  Cycle6
+
+
+   .. py:attribute:: center
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: rx
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: ry
+      :type:  sympy.Expr
+
+
+.. py:data:: PASCAL_PRESETS
+   :type:  dict[str, PascalPresetConfig]
+
+.. py:class:: PascalHexagonResult
+
+   Structured output from :func:`construct_pascal_hexagon`.
+
+   :ivar model: Populated :class:`~geometor.model.Model`.
+   :ivar points: Six conic vertices $(P_0, P_1, P_2, P_3, P_4, P_5)$.
+   :ivar cycle: Active 6-cycle $(c_0, c_1, c_2, c_3, c_4, c_5)$.
+   :ivar conic: Constructed :class:`~sympy.geometry.ellipse.Circle` or :class:`~sympy.geometry.ellipse.Ellipse`, if registered.
+   :ivar side_lines: Six side lines in cyclic order.
+   :ivar meets: Opposite-side meets ``{"M03": ..., "M14": ..., "M25": ...}``.
+   :ivar finite_meets: List of finite opposite-side meets.
+   :ivar pascal_line: Exact Pascal line joining the opposite-side meets.
+   :ivar hexagon: Optional inscribed 6-gon :class:`~sympy.geometry.polygon.Polygon`.
+   :ivar is_collinear: Exact algebraic check that all three opposite-side meets are collinear.
+   :ivar is_coconic: Exact Veronese determinant check that all six vertices lie on a conic.
+
+
+
+   .. py:attribute:: model
+      :type:  geometor.model.Model
+
+
+   .. py:attribute:: points
+      :type:  tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
+
+
+   .. py:attribute:: cycle
+      :type:  Cycle6
+
+
+   .. py:attribute:: conic
+      :type:  sympy.geometry.Ellipse | None
+
+
+   .. py:attribute:: side_lines
+      :type:  tuple[sympy.geometry.Line, sympy.geometry.Line, sympy.geometry.Line, sympy.geometry.Line, sympy.geometry.Line, sympy.geometry.Line]
+
+
+   .. py:attribute:: meets
+      :type:  dict[str, sympy.geometry.Point | None]
+
+
+   .. py:attribute:: finite_meets
+      :type:  list[sympy.geometry.Point]
+
+
+   .. py:attribute:: pascal_line
+      :type:  sympy.geometry.Line
+
+
+   .. py:attribute:: hexagon
+      :type:  sympy.geometry.Polygon | None
+
+
+   .. py:attribute:: is_collinear
+      :type:  bool
+
+
+   .. py:attribute:: is_coconic
+      :type:  bool
+
+
+.. py:class:: PascalSteinerFamilyResult
+
+   Structured output from :func:`construct_pascal_steiner_family`.
+
+   :ivar model: Populated :class:`~geometor.model.Model`.
+   :ivar points: Six conic vertices $(P_0, \dots, P_5)$.
+   :ivar triangle_a: Vertex indices $(a_0, a_1, a_2)$ of the first inscribed triangle.
+   :ivar triangle_b: Vertex indices $(b_0, b_1, b_2)$ of the complementary inscribed triangle.
+   :ivar conic: Constructed circle or ellipse carrier curve.
+   :ivar chords: Mapping ``(a_i, b_j) -> Line`` for the 9 cross-chords.
+   :ivar pascal_lines: Mapping ``perm -> Line`` for all 6 :math:`S_3` alternating hexagons.
+   :ivar even_pascal_lines: Tuple of the 3 even (:math:`A_3`) Pascal lines.
+   :ivar odd_pascal_lines: Tuple of the 3 odd (:math:`S_3 \setminus A_3`) Pascal lines.
+   :ivar steiner_even: Even Steiner concurrency point :math:`G_+` (ID ``"S1"``), if finite.
+   :ivar steiner_odd: Odd Steiner concurrency point :math:`G_-` (ID ``"S2"``), if finite.
+   :ivar steiner_line: Line :math:`[G_+ G_-]` joining the two Steiner points, if finite.
+   :ivar harmonic_ranges: Discovered collinear harmonic tetrads.
+   :ivar golden_sections: Discovered golden sections.
+
+
+
+   .. py:attribute:: model
+      :type:  geometor.model.Model
+
+
+   .. py:attribute:: points
+      :type:  tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
+
+
+   .. py:attribute:: triangle_a
+      :type:  tuple[int, int, int]
+
+
+   .. py:attribute:: triangle_b
+      :type:  tuple[int, int, int]
+
+
+   .. py:attribute:: conic
+      :type:  sympy.geometry.Ellipse | None
+
+
+   .. py:attribute:: chords
+      :type:  dict[tuple[int, int], sympy.geometry.Line]
+
+
+   .. py:attribute:: pascal_lines
+      :type:  dict[Perm3, sympy.geometry.Line]
+
+
+   .. py:attribute:: even_pascal_lines
+      :type:  tuple[sympy.geometry.Line, sympy.geometry.Line, sympy.geometry.Line]
+
+
+   .. py:attribute:: odd_pascal_lines
+      :type:  tuple[sympy.geometry.Line, sympy.geometry.Line, sympy.geometry.Line]
+
+
+   .. py:attribute:: steiner_even
+      :type:  sympy.geometry.Point | None
+
+
+   .. py:attribute:: steiner_odd
+      :type:  sympy.geometry.Point | None
+
+
+   .. py:attribute:: steiner_line
+      :type:  sympy.geometry.Line | None
+
+
+   .. py:attribute:: harmonic_ranges
+      :type:  list[geometor.pascal.projective.HarmonicRange]
+
+
+   .. py:attribute:: golden_sections
+      :type:  list[geometor.pascal.projective.GoldenRange]
+
+
+.. py:class:: HexagrammumMysticumCatalog
+
+   Complete projective catalog of the 60-line *Hexagrammum Mysticum* configuration.
+
+   :ivar points: Six exact conic vertices $(P_0, \dots, P_5)$.
+   :ivar chords: Mapping ``(i, j) -> (a, b, c)`` homogeneous line coordinates for all 15 chords.
+   :ivar diagonal_points: Mapping ``((i, j), (k, l)) -> (X, Y, Z)`` for all 45 Pascal diagonal points.
+   :ivar pascal_lines: Mapping ``canonical_cycle -> (a, b, c)`` for all 60 Pascal lines.
+   :ivar steiner_points: Mapping ``(triangle_a, parity) -> (X, Y, Z)`` for all 20 Steiner points.
+   :ivar kirkman_points: Mapping ``(cyc_1, cyc_2, cyc_3) -> (X, Y, Z)`` for all 60 Kirkman points.
+   :ivar plucker_lines: Tuple of 15 homogeneous line triples each incident with 4 Steiner points.
+
+
+
+   .. py:attribute:: points
+      :type:  tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
+
+
+   .. py:attribute:: chords
+      :type:  dict[tuple[int, int], HomVec3]
+
+
+   .. py:attribute:: diagonal_points
+      :type:  dict[tuple[tuple[int, int], tuple[int, int]], HomVec3]
+
+
+   .. py:attribute:: pascal_lines
+      :type:  dict[Cycle6, HomVec3]
+
+
+   .. py:attribute:: steiner_points
+      :type:  dict[tuple[tuple[int, int, int], str], HomVec3]
+
+
+   .. py:attribute:: kirkman_points
+      :type:  dict[tuple[Cycle6, Cycle6, Cycle6], HomVec3]
+
+
+   .. py:attribute:: plucker_lines
+      :type:  tuple[HomVec3, ...]
+
+
+.. py:function:: get_pascal_preset(name: str) -> PascalPresetConfig
+
+   Look up a named Pascal preset in :data:`PASCAL_PRESETS`.
+
+
+.. py:function:: canonical_hexagon_cycle(cycle: Sequence[int]) -> Cycle6
+
+   Normalize a 6-vertex permutation up to dihedral rotation and reversal ($D_6$).
+
+
+.. py:function:: construct_pascal_hexagon(model: geometor.model.Model | None = None, points: Sequence[PointInput] | None = None, cycle: Sequence[int] | None = None, *, preset: str = 'hexagrammum', include_conic: bool = True, include_hexagon: bool = True, enable_divine: bool = False) -> PascalHexagonResult
+
+   Construct Blaise Pascal's *Hexagrammum Mysticum* for six points on a conic.
+
+
+.. py:function:: construct_pascal_steiner_family(model: geometor.model.Model | None = None, points: Sequence[PointInput] | None = None, *, preset: str = 'hexagrammum', triangle_a: tuple[int, int, int] = (0, 2, 4), triangle_b: tuple[int, int, int] = (1, 3, 5), include_conic: bool = True, scan_harmonics: bool = True, enable_divine: bool = False) -> PascalSteinerFamilyResult
+
+   Construct the 6-hexagon S_3 bi-triangle Pascal family and its two Steiner points.
+
+
+.. py:function:: enumerate_hexagrammum_mysticum(points: Sequence[PointInput] | None = None, *, preset: str = 'hexagrammum') -> HexagrammumMysticumCatalog
+
+   Enumerate and verify the complete 60-line *Hexagrammum Mysticum* web in $\mathbb{P}^2$.
+
+
+.. py:function:: verify_pascal_symbolic() -> sympy.Expr
+
+   Prove Pascal's *Hexagrammum Mysticum* universally over $\mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]$.
+
+

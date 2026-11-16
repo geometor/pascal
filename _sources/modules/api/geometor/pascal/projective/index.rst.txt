@@ -1,0 +1,180 @@
+geometor.pascal.projective
+==========================
+
+.. py:module:: geometor.pascal.projective
+
+.. autoapi-nested-parse::
+
+   Exact symbolic projective geometry and conic primitives for Blaise Pascal's constructions.
+
+   Provides 100% exact SymPy implementations of rational stereographic circle
+   parameterization, five-point Veronese conic equations, coconicity tests,
+   Michel Chasles's cross-ratio on conics, line meets, and integration with
+   :mod:`geometor.divine` for emergent golden section detection.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.pascal.projective.PHI
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.pascal.projective.HarmonicRange
+   geometor.pascal.projective.GoldenRange
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.pascal.projective.quadrance
+   geometor.pascal.projective.line_spread
+   geometor.pascal.projective.exact_line_meet
+   geometor.pascal.projective.cross_ratio
+   geometor.pascal.projective.find_harmonic_ranges
+   geometor.pascal.projective.find_golden_sections
+   geometor.pascal.projective.enable_divine_analysis
+   geometor.pascal.projective.circle_stereographic_point
+   geometor.pascal.projective.conic_equation_through_points
+   geometor.pascal.projective.are_coconic
+   geometor.pascal.projective.conic_cross_ratio
+
+
+Module Contents
+---------------
+
+.. py:data:: PHI
+   :type:  sympy.Expr
+
+.. py:class:: HarmonicRange
+
+   Represents four ordered collinear points forming a harmonic range (P1, P3; P2, P4) = -1.
+
+   :ivar points: Ordered tuple (P1, P2, P3, P4) along the carrier line.
+   :ivar point_ids: Corresponding model IDs of the four points.
+   :ivar line: Carrier line in the model, if associated with one.
+   :ivar line_id: Model ID of the carrier line.
+   :ivar value: Exact symbolic cross-ratio (P1, P3; P2, P4) = -1.
+
+
+
+   .. py:attribute:: points
+      :type:  tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
+
+
+   .. py:attribute:: point_ids
+      :type:  tuple[str, str, str, str]
+
+
+   .. py:attribute:: line
+      :type:  sympy.geometry.Line | None
+
+
+   .. py:attribute:: line_id
+      :type:  str
+
+
+   .. py:attribute:: value
+      :type:  sympy.Expr
+
+
+.. py:class:: GoldenRange
+
+   Represents three ordered collinear points dividing a segment in the Golden Ratio \phi.
+
+   :ivar section: Underlying Section object.
+   :ivar point_ids: Ordered model IDs (P1, P2, P3) of the three points.
+   :ivar line: Carrier line in the model, if associated with one.
+   :ivar line_id: Model ID of the carrier line.
+   :ivar ratio: Exact symbolic ratio of longer to shorter segment (\phi).
+
+
+
+   .. py:attribute:: section
+      :type:  geometor.model.sections.Section
+
+
+   .. py:attribute:: point_ids
+      :type:  tuple[str, str, str]
+
+
+   .. py:attribute:: line
+      :type:  sympy.geometry.Line | None
+
+
+   .. py:attribute:: line_id
+      :type:  str
+
+
+   .. py:attribute:: ratio
+      :type:  sympy.Expr
+
+
+.. py:function:: quadrance(pt_1: sympy.geometry.Point, pt_2: sympy.geometry.Point) -> sympy.Expr
+
+   Compute the exact rational-trigonometric quadrance Q(P1, P2).
+
+
+.. py:function:: line_spread(line_1: sympy.geometry.Line, line_2: sympy.geometry.Line) -> sympy.Expr
+
+   Compute the exact rational-trigonometric spread s(l1, l2) = sin^2(theta).
+
+
+.. py:function:: exact_line_meet(line_1: sympy.geometry.Line, line_2: sympy.geometry.Line) -> sympy.geometry.Point | None
+
+   Compute the exact intersection of two lines via Cramer's rule.
+
+   Returns None when the two lines are parallel or coincident.
+
+
+.. py:function:: cross_ratio(a: sympy.geometry.Point, b: sympy.geometry.Point, c: sympy.geometry.Point, d: sympy.geometry.Point) -> sympy.Expr
+
+   Compute the exact collinear cross-ratio (A, B; C, D) = (AC/CB) / (AD/DB).
+
+
+.. py:function:: find_harmonic_ranges(model: geometor.model.Model, *, include_guides: bool = False) -> list[HarmonicRange]
+
+   Scan collinear points in model for harmonic tetrads (P1, P3; P2, P4) = -1.
+
+
+.. py:function:: find_golden_sections(model: geometor.model.Model, *, register_sections: bool = False, include_guides: bool = False) -> list[GoldenRange]
+
+   Scan collinear points in model for golden sections with ratio \phi.
+
+
+.. py:function:: enable_divine_analysis(model: geometor.model.Model) -> geometor.model.Model
+
+   Attach geometor.divine hook to model and return it.
+
+
+.. py:function:: circle_stereographic_point(t: sympy.Expr | int, *, center: sympy.geometry.Point | tuple[sympy.Expr | int, sympy.Expr | int] = (0, 0), radius: sympy.Expr | int = 1) -> sympy.geometry.Point
+
+   Compute an exact point on (x - x0)^2 + (y - y0)^2 = R^2 via rational stereographic slope t.
+
+   P(t) = (x0 + R * (1 - t^2) / (1 + t^2), y0 + R * (2t) / (1 + t^2)).
+
+
+.. py:function:: conic_equation_through_points(points: Sequence[sympy.geometry.Point | tuple[sympy.Expr | int, sympy.Expr | int]]) -> sympy.Expr
+
+   Construct the exact quadratic conic polynomial C(x, y) through five points.
+
+
+.. py:function:: are_coconic(points: Sequence[sympy.geometry.Point | tuple[sympy.Expr | int, sympy.Expr | int]]) -> bool
+
+   Return True iff all given points lie on a single conic.
+
+
+.. py:function:: conic_cross_ratio(p1: sympy.geometry.Point, p2: sympy.geometry.Point, p3: sympy.geometry.Point, p4: sympy.geometry.Point, observer: sympy.geometry.Point) -> sympy.Expr
+
+   Compute Michel Chasles's projective cross-ratio (P1, P2; P3, P4) on a conic.
+
+
