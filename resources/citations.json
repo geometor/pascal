@@ -1,0 +1,74 @@
+{
+  "pascal:1640": {
+    "author": "Blaise Pascal",
+    "work": "Essay pour les coniques",
+    "locus": "Paris: February 1640 (Broadside published under the initials B. P.)",
+    "year": "1640",
+    "category": "primary",
+    "note": "Seminal printed broadside announcing the Mystic Hexagram theorem, projective definitions of pencils of lines, and the program for the complete projective study of conic sections."
+  },
+  "desargues:1639": {
+    "author": "Girard Desargues",
+    "work": "Brouillon project d'une atteinte aux événemens des rencontres du cône avec un plan",
+    "locus": "Paris, 1639",
+    "year": "1639",
+    "category": "primary",
+    "note": "Foundational text of synthetic projective geometry introducing points at infinity, involutions, and pencil ordonnances, acknowledged by Pascal as his direct inspiration."
+  },
+  "apollonius:conics": {
+    "author": "Apollonius of Perga",
+    "work": "Conics (Κωνικά, Books I–VIII)",
+    "locus": "c. 200 BCE (ed. Heiberg 1891–1893)",
+    "year": "c. 200 BCE",
+    "category": "ancient",
+    "note": "Classical Hellenistic benchmark of conic section theory synthesized and generalized projectively by Pascal."
+  },
+  "pappus:synagoge": {
+    "author": "Pappus of Alexandria",
+    "work": "Synagoge (Mathematical Collection, Book VII)",
+    "locus": "c. 340 CE (ed. Hultsch 1876–1878)",
+    "year": "c. 340 CE",
+    "category": "ancient",
+    "note": "Contains the two-line Hexagon Theorem (VII.139) that forms the degenerate archetype of Pascal's Hexagrammum Mysticum."
+  },
+  "steiner:1832": {
+    "author": "Jakob Steiner",
+    "work": "Systematische Entwicklung der Abhängigkeit geometrischer Gestalten von einander",
+    "locus": "Berlin: Fincke, 1832",
+    "year": "1832",
+    "category": "modern",
+    "note": "Establishes the 20 Steiner points formed by 3-by-3 concurrencies of the 60 Pascal lines."
+  },
+  "pluecker:1830": {
+    "author": "Julius Plücker",
+    "work": "Über ein neues Übertragungsprincip in der analytischen Geometrie",
+    "locus": "Journal für die reine und angewandte Mathematik (Crelle's Journal), 1830",
+    "year": "1830",
+    "category": "modern",
+    "note": "Proves that the 20 Steiner points lie four-by-four on 15 Plücker lines."
+  },
+  "kirkman:1850": {
+    "author": "Thomas Penyngton Kirkman",
+    "work": "On the Hexagrammum Mysticum",
+    "locus": "Cambridge and Dublin Mathematical Journal, Vol. 5, pp. 281–283, 1850",
+    "year": "1850",
+    "category": "modern",
+    "note": "Discovers the second set of 60 3-fold concurrencies of Pascal lines (Kirkman points)."
+  },
+  "chasles:1865": {
+    "author": "Michel Chasles",
+    "work": "Traité des sections coniques",
+    "locus": "Paris: Gauthier-Villars, 1865",
+    "year": "1865",
+    "category": "modern",
+    "note": "Comprehensive nineteenth-century synthetic treatise establishing conic cross-ratio observer invariance."
+  },
+  "smith:1929": {
+    "author": "David Eugene Smith (ed.)",
+    "work": "A Source Book in Mathematics",
+    "locus": "New York: McGraw-Hill, 1929 (English translation of Essay on Conics by Dr. Frances Marguerite Clarke, pp. 326–330)",
+    "year": "1929",
+    "category": "modern",
+    "note": "First complete English translation of Pascal's 1640 broadside with historical apparatus."
+  }
+}

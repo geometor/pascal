@@ -1,0 +1,90 @@
+{
+  "pascal": {
+    "name": "Blaise Pascal",
+    "dates": "1623–1662",
+    "sort_year": 1640,
+    "era": "early-modern",
+    "role": "French mathematician, physicist, and philosopher",
+    "summary": "At age sixteen published the broadsheet Essay pour les coniques (1640) announcing the Hexagrammum Mysticum (Pascal's Theorem), generalizing Pappus's two-line lemma to any smooth conic section."
+  },
+  "desargues": {
+    "name": "Girard Desargues",
+    "dates": "1591–1661",
+    "sort_year": 1639,
+    "era": "early-modern",
+    "role": "French geometer and architect, founder of projective geometry",
+    "summary": "Pioneered synthetic projective geometry and points at infinity in his 1639 Brouillon project; acknowledged by young Pascal as the primary inspiration for his conic methods."
+  },
+  "pappus": {
+    "name": "Pappus of Alexandria",
+    "dates": "fl. c. 320–340 CE",
+    "sort_year": 330,
+    "era": "late-antique",
+    "role": "Alexandrian geometer and author of the Synagoge (Mathematical Collection)",
+    "summary": "Proved the two-line Hexagon Theorem (Synagoge VII.139) thirteen centuries before Pascal generalized it to smooth conics."
+  },
+  "apollonius": {
+    "name": "Apollonius of Perga",
+    "dates": "c. 262–c. 190 BCE",
+    "sort_year": -200,
+    "era": "hellenistic",
+    "role": "The Great Geometer of antiquity and author of the Conics",
+    "summary": "Established the classical theory of conics as planar sections of a cone, providing the foundation that Desargues and Pascal transformed projectively."
+  },
+  "steiner": {
+    "name": "Jakob Steiner",
+    "dates": "1796–1863",
+    "sort_year": 1828,
+    "era": "nineteenth-century",
+    "role": "Swiss geometer and master of synthetic projective geometry",
+    "summary": "Discovered in 1828 that the 60 Pascal lines concur three-by-three at 20 Steiner points (two per complementary triangle partition)."
+  },
+  "pluecker": {
+    "name": "Julius Plücker",
+    "dates": "1801–1868",
+    "sort_year": 1830,
+    "era": "nineteenth-century",
+    "role": "German mathematician and physicist",
+    "summary": "Discovered in 1830 that the 20 Steiner points lie four-by-four along 15 Plücker lines, establishing line coordinates and projective duality."
+  },
+  "kirkman": {
+    "name": "Thomas Penyngton Kirkman",
+    "dates": "1806–1895",
+    "sort_year": 1850,
+    "era": "nineteenth-century",
+    "role": "British mathematician and clergyman",
+    "summary": "Discovered in 1850 that the 60 Pascal lines concur three-by-three in a second way at 60 Kirkman points, three of which lie on each Pascal line."
+  },
+  "chasles": {
+    "name": "Michel Chasles",
+    "dates": "1793–1880",
+    "sort_year": 1865,
+    "era": "nineteenth-century",
+    "role": "French geometer and historian of mathematics",
+    "summary": "Proved that four points on an irreducible conic possess an intrinsic cross-ratio independent of the observer point on the conic (Traité des sections coniques, 1865)."
+  },
+  "brianchon": {
+    "name": "Charles Julien Brianchon",
+    "dates": "1783–1864",
+    "sort_year": 1806,
+    "era": "nineteenth-century",
+    "role": "French mathematician and chemist",
+    "summary": "Discovered in 1806 Brianchon's theorem, the exact projective dual of Pascal's theorem: the three principal diagonals of a circumscribed hexagon concur at a single point."
+  },
+  "mersenne": {
+    "name": "Marin Mersenne, O.M.",
+    "dates": "1588–1648",
+    "sort_year": 1640,
+    "era": "early-modern",
+    "role": "French polymath and central node of the European scientific correspondence",
+    "summary": "Organized the Paris mathematical academy attended by Desargues, Fermat, and Étienne & Blaise Pascal; distributed Pascal's 1640 broadside to Descartes."
+  },
+  "leibniz": {
+    "name": "Gottfried Wilhelm Leibniz",
+    "dates": "1646–1716",
+    "sort_year": 1676,
+    "era": "early-modern",
+    "role": "German philosopher and polymath, co-inventor of the calculus",
+    "summary": "Examined Pascal's unpublished manuscript treatise on conics (Genera Conicorum) in Paris in 1676 at the request of Pascal's heirs, copying key extracts before the manuscript was lost."
+  }
+}

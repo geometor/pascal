@@ -1,0 +1,50 @@
+{
+  "ordonnance": {
+    "term": "Ordonnance (Order of lines)",
+    "original": "ordonnance de lignes",
+    "definition": "A pencil of straight lines that either concur at a common point or are mutually parallel (concurrent at an ideal point at infinity).",
+    "category": "projective"
+  },
+  "hexagrammum-mysticum": {
+    "term": "Hexagrammum Mysticum",
+    "original": "hexagramme mystique",
+    "definition": "The complete projective configuration of six points on a conic section and the sixty Pascal lines formed by the intersections of opposite sides of the inscribed hexagons.",
+    "category": "theorem"
+  },
+  "droite-de-pascal": {
+    "term": "Pascal Line",
+    "original": "droite de Pascal",
+    "definition": "The straight line passing through the three points of intersection of opposite sides of a hexagon inscribed in a conic section.",
+    "category": "line"
+  },
+  "point-de-steiner": {
+    "term": "Steiner Point",
+    "original": "point de Steiner",
+    "definition": "One of twenty points in the Hexagrammum Mysticum web at which three Pascal lines concur, corresponding to two points per complementary bi-triangle partition of the six conic vertices.",
+    "category": "point"
+  },
+  "point-de-kirkman": {
+    "term": "Kirkman Point",
+    "original": "point de Kirkman",
+    "definition": "One of sixty points in the Hexagrammum Mysticum web where three Pascal lines concur in a second, distinct incidence configuration dual to Pascal lines.",
+    "category": "point"
+  },
+  "droite-de-pluecker": {
+    "term": "Plücker Line",
+    "original": "droite de Plücker",
+    "definition": "One of fifteen straight lines in the Hexagrammum Mysticum web, each containing exactly four of the twenty Steiner points.",
+    "category": "line"
+  },
+  "birapport": {
+    "term": "Cross-Ratio",
+    "original": "birapport / rapport anharmonique",
+    "definition": "The fundamental projective invariant (A, B; C, D) = (AC/CB) / (AD/DB) preserved under central and conic projections.",
+    "category": "invariant"
+  },
+  "conique": {
+    "term": "Conic Section",
+    "original": "section de cône",
+    "definition": "A planar curve of degree two formed by intersecting a right or oblique cone with a plane: circle, ellipse, parabola, hyperbola, or degenerate line-pair.",
+    "category": "curve"
+  }
+}

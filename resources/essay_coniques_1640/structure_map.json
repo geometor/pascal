@@ -1,0 +1,24 @@
+{
+  "edition": "essay_coniques_1640",
+  "title": "Essay pour les Coniques",
+  "author": "Blaise Pascal",
+  "tracks": [
+    "en",
+    "fr",
+    "summary",
+    "notes"
+  ],
+  "sections": [
+    {
+      "id": "essay_coniques",
+      "title": "Essay pour les Coniques (1640)",
+      "order": 1,
+      "files": {
+        "en": "essay-coniques-en.rst",
+        "fr": "essay-coniques-fr.rst",
+        "summary": "essay-coniques-summary.rst",
+        "notes": "essay-coniques-notes.rst"
+      }
+    }
+  ]
+}

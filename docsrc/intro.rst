@@ -1,0 +1,1 @@
+The mission of this project is to capture a semantic digital library of the works of **Blaise Pascal** — the French mathematician and philosopher whose 1640 broadside Essay pour les Coniques unveiled the Mystic Hexagram theorem for any conic section.
