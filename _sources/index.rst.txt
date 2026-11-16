@@ -1,12 +1,12 @@
 .. container:: author-overline
 
-   the works of
+   semantic digital archive • the works of
 
 =============
 Blaise Pascal
 =============
 
-The mission of this project is to capture a semantic digital library of the works of :person:`Blaise Pascal <pascal>` (1623–1662), the French mathematician and philosopher whose 1640 broadside *Essay pour les Coniques* unveiled the Mystic Hexagram theorem for any conic section.
+The works of :person:`Blaise Pascal <pascal>` (1623–1662) revolutionized projective geometry with the discovery of the *hexagrammum mysticum* in his landmark 1640 broadside *Essay pour les Coniques*. Within the interconnected `GEOMETOR <https://geometor.com/books/>`_ semantic digital archive, these foundational texts are liberated from static print bounds into addressable semantic units, calibrated vector diagrams, primary-source folio provenance, and exact symbolic algebra speaking one shared geometric language.
 
 .. collection::
    :type: book
