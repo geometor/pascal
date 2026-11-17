@@ -1,23 +1,25 @@
 :navigation: header
 :order: 1
 :type: book
-:nav_title: Essay pour les Coniques
-:breadcrumb_title: Essay pour les Coniques
+:nav_title: Essay on Conics
+:breadcrumb_title: Essay on Conics
 :layout: book
-:book_title: Essay pour les Coniques
-:book_subtitle: Essay on Conics — Blaise Pascal (Paris, 1640)
+:title: Essay on Conics
+:book_title: Essay on Conics
+:book_subtitle: Essay pour les Coniques — Blaise Pascal (Paris, 1640)
 :author: Blaise Pascal
 :year: 1640
+:tracks: English: index | French: title-fr
 :excerpt: Pascal's 1640 broadside announcing the Mystic Hexagram theorem for any conic section, foundational projective definitions, and universal projective invariance.
 
 .. _essay-coniques-1640-index:
 .. _essay_coniques_1640-index:
 
-=======================
-Essay pour les Coniques
-=======================
+===============
+Essay on Conics
+===============
 
-.. rubric:: *Essay on Conics* — Blaise Pascal (Paris, February 1640)
+.. rubric:: *Essay pour les Coniques* — Blaise Pascal (Paris, February 1640)
 
 .. container:: title-page
 
@@ -40,9 +42,9 @@ Table of Contents
    * - Division
      - Description & Theorems
      - Parallel Tracks
-   * - **Essay pour les Coniques** *(1640)*
+   * - **Essay on Conics** *(1640)*
      - Definitions I–III (*ordonnances de lignes*, conics, straight line), Lemmas I–II (harmonic & projective collineation), **Lemma III (The Mystic Hexagram / Pascal's Theorem)**, and Conclusion acknowledging Girard Desargues.
-     - :doc:`EN <essay-coniques-en>` · :doc:`FR <essay-coniques-fr>` · :doc:`Summary <essay-coniques-summary>` · :doc:`Notes <essay-coniques-notes>`
+     - :doc:`English <essay-coniques-en>` · :doc:`French <essay-coniques-fr>` · :doc:`Summary <essay-coniques-summary>` · :doc:`Notes <essay-coniques-notes>`
 
 Editorial & Historical Provenance
 ----------------------------------
@@ -68,3 +70,10 @@ Scholarly Apparatus
    essay-coniques-fr
    essay-coniques-summary
    essay-coniques-notes
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Title Pages
+
+   title-fr
