@@ -3,6 +3,11 @@ GEOMETOR • pascal
 
 **Visit the Online Archive:** https://geometor.github.io/pascal/
 
+.. image:: docsrc/_static/constructions/golden_pascal.svg
+   :alt: GEOMETOR • pascal featured geometric construction
+   :target: https://geometor.github.io/pascal/
+   :align: center
+
 **Blaise Pascal • Essay pour les Coniques • semantic digital archive**
 
 Mission
@@ -13,7 +18,7 @@ Mission
 Books in This Archive
 ---------------------
 
-- **`Essay pour les Coniques <https://geometor.github.io/pascal/essay_coniques_1640/>`_** — Pascal's landmark broadsheet introducing the *hexagrammum mysticum* and the foundations of modern projective geometry (Paris, 1640).
+- **`Essay on Conics <https://geometor.github.io/pascal/essay_coniques_1640/>`_** — *Essay pour les Coniques* (Paris, 1640), Pascal's landmark broadsheet introducing the *hexagrammum mysticum* and the foundations of modern projective geometry.
 
 Repository Contents
 -------------------
