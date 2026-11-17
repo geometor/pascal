@@ -18,7 +18,7 @@ Mission
 Books in This Archive
 ---------------------
 
-- **`Essay on Conics <https://geometor.github.io/pascal/essay_coniques_1640/>`_** — *Essay pour les Coniques* (Paris, 1640), Pascal's landmark broadsheet introducing the *hexagrammum mysticum* and the foundations of modern projective geometry.
+- `Essay on Conics <https://geometor.github.io/pascal/essay_coniques_1640/>`_ — *Essay pour les Coniques* (Paris, 1640), Pascal's landmark broadsheet introducing the *hexagrammum mysticum* and the foundations of modern projective geometry.
 
 Repository Contents
 -------------------
