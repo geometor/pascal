@@ -35,6 +35,6 @@ Table des matières
 Apparat critique
 ----------------
 
-* :doc:`/persons`
+* :doc:`/people/index`
 * :doc:`/bibliography`
 * :doc:`/glossary`
