@@ -57,7 +57,7 @@ Editorial & Historical Provenance
 Scholarly Apparatus
 -------------------
 
-* :doc:`/persons` — Biographical register of Pascal, Desargues, Pappus, Apollonius, Steiner, Plücker, and Kirkman.
+* :doc:`/people/index` — Biographical register of Pascal, Desargues, Pappus, Apollonius, Steiner, Plücker, and Kirkman.
 * :doc:`/bibliography` — Critical editions and foundational projective treatises.
 * :doc:`/glossary` — Early modern French and projective mathematical terminology.
 

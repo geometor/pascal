@@ -72,7 +72,7 @@
           <a href="essay-coniques-notes.html"  >Scholarly Notes</a>
         </li>
         <li>
-          <a href="../persons.html"  >People</a>
+          <a href="../people/index.html"  >People</a>
         </li>
         <li>
           <a href="../bibliography.html"  >Bibliography</a>
@@ -135,7 +135,7 @@
         <p class="rubric">Exact Symbolic Projective Geometry, Veronese Invariants &amp; 60-Line Web</p>
         <section class="level-2" id="from-two-straight-lines-to-any-conic-section">
         <h2>From Two Straight Lines to Any Conic Section<a class="headerlink" href="#from-two-straight-lines-to-any-conic-section" title="Link to this heading">¶</a></h2>
-        <p>Thirteen centuries after <a class="person-ref" id="occ-person-pappus-1" href="../persons.html#person-pappus" data-person="pappus" title="Pappus of Alexandria (fl. c. 320–340 CE) — Alexandrian geometer and author of the Synagoge (Mathematical Collection)">Pappus of Alexandria</a> proved his Hexagon Lemma (<em>Synagoge</em> VII.139) for six points distributed along <strong>two straight lines</strong> $a$ and $b$, sixteen-year-old <a class="person-ref" id="occ-person-pascal-1" href="../persons.html#person-pascal" data-person="pascal" title="Blaise Pascal (1623–1662) — French mathematician, physicist, and philosopher">Blaise Pascal</a> published a single printed broadsheet in February 1640—<em>Essai pour les coniques</em>—announcing a breathtaking generalization: <strong>the two lines can be replaced by any conic section</strong>.</p>
+        <p>Thirteen centuries after <a class="person-ref" id="occ-person-pappus-1" href="../people/pappus.html#person-pappus" data-person="pappus" title="Pappus of Alexandria (fl. c. 320–340 CE) — Alexandrian geometer and author of the Synagoge (Mathematical Collection)">Pappus of Alexandria</a> proved his Hexagon Lemma (<em>Synagoge</em> VII.139) for six points distributed along <strong>two straight lines</strong> $a$ and $b$, sixteen-year-old <a class="person-ref" id="occ-person-pascal-1" href="../people/pascal.html#person-pascal" data-person="pascal" title="Blaise Pascal (1623–1662) — French mathematician, physicist, and philosopher">Blaise Pascal</a> published a single printed broadsheet in February 1640—<em>Essai pour les coniques</em>—announcing a breathtaking generalization: <strong>the two lines can be replaced by any conic section</strong>.</p>
         <p>Algebraically, Pappus’s theorem and Pascal’s theorem are <strong>two faces of one projective law</strong>. Six points $P_k = (x_k, y_k)$ lie on a planar curve of degree two—whether a <strong>smooth conic</strong> $\mathcal{C}: A x^2 + B x y + C y^2 + D x + E y + F = 0$ (circle, ellipse, parabola, or hyperbola) or a <strong>degenerate conic</strong> $L_a(x, y) \cdot L_b(x, y) = 0$ (Pappus’s pair of lines)—if and only if their $6 \times 6$ <strong>Veronese matrix</strong> drops rank ($\det V_6 = 0$):</p>
         <div class="math notranslate nohighlight">
         \[\begin{split}\det \begin{bmatrix}
@@ -144,7 +144,7 @@
         \vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots \\
         x_5^2 &amp; x_5 y_5 &amp; y_5^2 &amp; x_5 &amp; y_5 &amp; 1
         \end{bmatrix} = 0.\end{split}\]</div>
-        <p>In <code class="docutils literal notranslate"><span class="pre">geometor.pascal.projective.are_coconic</span></code>, this exact SymPy rank test unifies smooth circles and ellipses with degenerate configurations under a single algebraic predicate, while <a class="person-ref" id="occ-person-maclaurin-1" href="../persons.html#person-maclaurin" data-person="maclaurin" title="Person: maclaurin">Colin Maclaurin</a> (1720) and <a class="person-ref" id="occ-person-braikenridge-1" href="../persons.html#person-braikenridge" data-person="braikenridge" title="Person: braikenridge">William Braikenridge</a> (1733) proved the converse: if the three opposite-side intersections of a hexagon are collinear, its six vertices necessarily lie on a conic.</p>
+        <p>In <code class="docutils literal notranslate"><span class="pre">geometor.pascal.projective.are_coconic</span></code>, this exact SymPy rank test unifies smooth circles and ellipses with degenerate configurations under a single algebraic predicate, while <span class="person-ref" data-person="maclaurin" title="Person: maclaurin">Colin Maclaurin</span> (1720) and <span class="person-ref" data-person="braikenridge" title="Person: braikenridge">William Braikenridge</span> (1733) proved the converse: if the three opposite-side intersections of a hexagon are collinear, its six vertices necessarily lie on a conic.</p>
         <div class="admonition-theorem-pascal-s-hexagrammum-mysticum-1640 admonition">
         <p class="admonition-title">Theorem (Pascal’s <em>Hexagrammum Mysticum</em>, 1640)</p>
         <p>Let $P_0, P_1, P_2, P_3, P_4, P_5$ be any six distinct points on an irreducible conic $\mathcal{C}$ in $\mathbb{P}^2$, ordered in a cyclic hexagon $\langle P_{c_0}, P_{c_1}, P_{c_2}, P_{c_3}, P_{c_4}, P_{c_5} \rangle$. Then the three intersections of opposite sides,</p>
@@ -347,7 +347,7 @@
         <p>On two lines (Pappus), permuting the vertices yields $3! = 6$ hexagons and <strong>6 Pappus lines</strong> concurring in <strong>2 Steiner Star points</strong>. On a smooth conic, however, <strong>no three of the six vertices are collinear</strong>, so <strong>every cyclic ordering</strong> of $P_0, \dots, P_5$ up to dihedral rotation and reversal ($D_6$, order 12) inscribes a valid hexagon—producing:</p>
         <div class="math notranslate nohighlight">
         \[\frac{6!}{2 \cdot 6} = \mathbf{60\text{ Pascal lines}}!\]</div>
-        <p>In the nineteenth century, <a class="person-ref" id="occ-person-steiner-1" href="../persons.html#person-steiner" data-person="steiner" title="Jakob Steiner (1796–1863) — Swiss geometer and master of synthetic projective geometry">Jakob Steiner</a> (1828), <a class="person-ref" id="occ-person-pluecker-1" href="../persons.html#person-pluecker" data-person="pluecker" title="Julius Plücker (1801–1868) — German mathematician and physicist">Julius Plücker</a> (1830), <a class="person-ref" id="occ-person-kirkman-1" href="../persons.html#person-kirkman" data-person="kirkman" title="Thomas Penyngton Kirkman (1806–1895) — British mathematician and clergyman">Thomas Penyngton Kirkman</a> (1850), Arthur Cayley, and George Salmon uncovered an astonishing, self-dual incidence architecture hidden inside these 60 lines. Running <code class="docutils literal notranslate"><span class="pre">enumerate_hexagrammum_mysticum(preset=&quot;hexagrammum&quot;)</span></code> constructs and verifies every element of this web in exact homogeneous coordinates with <strong>zero combinatorial degeneracies</strong>:</p>
+        <p>In the nineteenth century, <a class="person-ref" id="occ-person-steiner-1" href="../people/steiner.html#person-steiner" data-person="steiner" title="Jakob Steiner (1796–1863) — Swiss geometer and master of synthetic projective geometry">Jakob Steiner</a> (1828), <a class="person-ref" id="occ-person-pluecker-1" href="../people/pluecker.html#person-pluecker" data-person="pluecker" title="Julius Plücker (1801–1868) — German mathematician and physicist">Julius Plücker</a> (1830), <a class="person-ref" id="occ-person-kirkman-1" href="../people/kirkman.html#person-kirkman" data-person="kirkman" title="Thomas Penyngton Kirkman (1806–1895) — British mathematician and clergyman">Thomas Penyngton Kirkman</a> (1850), Arthur Cayley, and George Salmon uncovered an astonishing, self-dual incidence architecture hidden inside these 60 lines. Running <code class="docutils literal notranslate"><span class="pre">enumerate_hexagrammum_mysticum(preset=&quot;hexagrammum&quot;)</span></code> constructs and verifies every element of this web in exact homogeneous coordinates with <strong>zero combinatorial degeneracies</strong>:</p>
         <table class="docutils align-default" id="id1">
         <caption><span class="caption-text">Exact Projective Census of Pascal’s <em>Hexagrammum Mysticum</em> (<code class="docutils literal notranslate"><span class="pre">preset=&quot;hexagrammum&quot;</span></code>)</span><a class="headerlink" href="#id1" title="Link to this table">¶</a></caption>
         <colgroup>
@@ -372,19 +372,19 @@
         </tr>
         <tr class="row-even"><td><p><strong>Pascal Lines</strong> $p_H$</p></td>
         <td><p><strong>60</strong></p></td>
-        <td><p>$6! / 12 = 60$ lines, each carrying 3 of the 45 diagonal points (<a class="person-ref" id="occ-person-pascal-2" href="../persons.html#person-pascal" data-person="pascal" title="Blaise Pascal (1623–1662) — French mathematician, physicist, and philosopher">Pascal</a>, 1640)</p></td>
+        <td><p>$6! / 12 = 60$ lines, each carrying 3 of the 45 diagonal points (<a class="person-ref" id="occ-person-pascal-2" href="../people/pascal.html#person-pascal" data-person="pascal" title="Blaise Pascal (1623–1662) — French mathematician, physicist, and philosopher">Pascal</a>, 1640)</p></td>
         </tr>
         <tr class="row-odd"><td><p><strong>Steiner Points</strong> $G$</p></td>
         <td><p><strong>20</strong></p></td>
-        <td><p>60 Pascal lines concur 3-by-3 at 20 Steiner points—2 per complementary triangle pair (<a class="person-ref" id="occ-person-steiner-2" href="../persons.html#person-steiner" data-person="steiner" title="Jakob Steiner (1796–1863) — Swiss geometer and master of synthetic projective geometry">Steiner</a>, 1828)</p></td>
+        <td><p>60 Pascal lines concur 3-by-3 at 20 Steiner points—2 per complementary triangle pair (<a class="person-ref" id="occ-person-steiner-2" href="../people/steiner.html#person-steiner" data-person="steiner" title="Jakob Steiner (1796–1863) — Swiss geometer and master of synthetic projective geometry">Steiner</a>, 1828)</p></td>
         </tr>
         <tr class="row-even"><td><p><strong>Kirkman Points</strong> $K$</p></td>
         <td><p><strong>60</strong></p></td>
-        <td><p>60 Pascal lines also concur 3-by-3 in a <strong>second</strong> way at 60 Kirkman points—3 on each Pascal line (<a class="person-ref" id="occ-person-kirkman-2" href="../persons.html#person-kirkman" data-person="kirkman" title="Thomas Penyngton Kirkman (1806–1895) — British mathematician and clergyman">Kirkman</a>, 1850)</p></td>
+        <td><p>60 Pascal lines also concur 3-by-3 in a <strong>second</strong> way at 60 Kirkman points—3 on each Pascal line (<a class="person-ref" id="occ-person-kirkman-2" href="../people/kirkman.html#person-kirkman" data-person="kirkman" title="Thomas Penyngton Kirkman (1806–1895) — British mathematician and clergyman">Kirkman</a>, 1850)</p></td>
         </tr>
         <tr class="row-odd"><td><p><strong>Plücker Lines</strong> $\ell_{\mathrm{Pl}}$</p></td>
         <td><p><strong>15</strong></p></td>
-        <td><p>20 Steiner points lie 4-by-4 along 15 Plücker lines—3 through each Steiner point (<a class="person-ref" id="occ-person-pluecker-2" href="../persons.html#person-pluecker" data-person="pluecker" title="Julius Plücker (1801–1868) — German mathematician and physicist">Plücker</a>, 1830)</p></td>
+        <td><p>20 Steiner points lie 4-by-4 along 15 Plücker lines—3 through each Steiner point (<a class="person-ref" id="occ-person-pluecker-2" href="../people/pluecker.html#person-pluecker" data-person="pluecker" title="Julius Plücker (1801–1868) — German mathematician and physicist">Plücker</a>, 1830)</p></td>
         </tr>
         </tbody>
         </table>
@@ -663,6 +663,7 @@
         <li><a href="../types/book.html">book</a></li>
         <li><a href="../types/book_title.html">book_title</a></li>
         <li><a href="../types/log.html">log</a></li>
+        <li><a href="../types/person.html">person</a></li>
         <li><a href="../types/section.html">section</a></li>
       </ul>
     </aside>
@@ -689,6 +690,7 @@
   <script src="../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../_static/js/collection_directory.js?v=f242906c"></script>
   <script src="../_static/js/geometor_interactive.js?v=b2892320"></script>
   <script>window.MathJax = {"tex": {"inlineMath": [["\\(", "\\)"], ["$", "$"]], "displayMath": [["\\[", "\\]"], ["$$", "$$"]]}}</script>
   <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
