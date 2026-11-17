@@ -20,17 +20,6 @@ Books in This Archive
 
 - `Essay on Conics <https://geometor.github.io/pascal/essay_coniques_1640/>`_ — *Essay pour les Coniques* (Paris, 1640), Pascal's landmark broadsheet introducing the *hexagrammum mysticum* and the foundations of modern projective geometry.
 
-Python Package & Modules
-------------------------
-
-The ``geometor-pascal`` Python package (``import geometor.pascal``) provides the executable symbolic geometry, construction, and compilation modules powering this archive:
-
-- ``hexagrammum.py`` — Symbolic DAG constructions and combinatorics for Blaise Pascal's *Hexagrammum Mysticum* (1640).
-- ``projective.py`` — Exact symbolic projective geometry and conic primitives for Blaise Pascal's constructions.
-- ``render.py`` — Publication-grade interactive SVG renderer for exact projective constructions.
-- ``app.py`` — Command-line interface for ``geometor.pascal``.
-
-See the `API Reference <https://geometor.github.io/pascal/modules/>`_ for full module documentation.
 
 Repository Contents
 -------------------
