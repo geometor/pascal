@@ -3,6 +3,12 @@ GEOMETOR • pascal
 
 **Visit the Online Archive:** https://geometor.github.io/pascal/
 
+.. image:: docsrc/_static/logo.png
+   :alt: GEOMETOR • pascal Medallion
+   :target: https://geometor.github.io/pascal/
+   :width: 180px
+   :align: center
+
 .. image:: docsrc/_static/constructions/golden_pascal.svg
    :alt: GEOMETOR • pascal featured geometric construction
    :target: https://geometor.github.io/pascal/
