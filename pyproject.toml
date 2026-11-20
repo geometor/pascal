@@ -5,7 +5,7 @@ authors = [
   { name = "phiarchitect", email = "github@geometor.com" },
 ]
 description = "the French mathematician and philosopher whose 1640 broadside Essay pour les Coniques unveiled the Mystic Hexagram theorem for any conic section"
-readme = "README.rst"
+readme = "README.md"
 requires-python = ">=3.13"
 license = { file = "LICENSE" }
 classifiers = [
