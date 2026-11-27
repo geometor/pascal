@@ -46,9 +46,9 @@ Foundational Lemmas
 Lemma I
 ~~~~~~~
 
-If in the plane $MSQ$, from the point $M$ proceed two straight lines $MK, MV$, and from the point $S$ proceed two straight lines $SK, SV$; and $K$ is the intersection of lines $MK, SK$, and $V$ the intersection of lines $MV, SV$, and $A$ the intersection of lines $MK, SV$, and $\mu$ the intersection of lines $MV, SK$; and through two of the four points $A, K, \mu, V$ which are not in the same straight line with points $M, S$—as through points $K, V$—passes a conic section intersecting the lines $MV, MP, SV, SK$ in points $P, O, N, T$:
+If in the plane :math:`MSQ`, from the point :math:`M` proceed two straight lines :math:`MK, MV`, and from the point :math:`S` proceed two straight lines :math:`SK, SV`; and :math:`K` is the intersection of lines :math:`MK, SK`, and :math:`V` the intersection of lines :math:`MV, SV`, and :math:`A` the intersection of lines :math:`MK, SV`, and :math:`\mu` the intersection of lines :math:`MV, SK`; and through two of the four points :math:`A, K, \mu, V` which are not in the same straight line with points :math:`M, S`—as through points :math:`K, V`—passes a conic section intersecting the lines :math:`MV, MP, SV, SK` in points :math:`P, O, N, T`:
 
-Then the lines $MS, NO, TP$ are of the same order.
+Then the lines :math:`MS, NO, TP` are of the same order.
 
 Lemma II
 ~~~~~~~~
@@ -58,7 +58,7 @@ If through the same straight line pass several planes which are intersected by a
 Lemma III (The Mystic Hexagram / Pascal's Theorem)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If in the plane $MSQ$ on a conic section are chosen any six points $P, K, V, O, T, N$, and lines are drawn joining them in succession forming a cyclic hexagon:
+If in the plane :math:`MSQ` on a conic section are chosen any six points :math:`P, K, V, O, T, N`, and lines are drawn joining them in succession forming a cyclic hexagon:
 
 The intersections of opposite sides—namely the intersection of the first and fourth sides, that of the second and fifth sides, and that of the third and sixth sides—all lie in a single straight line: the **Pascal Line**.
 

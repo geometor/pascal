@@ -46,9 +46,9 @@ Lemmes Préliminaires
 Lemme I
 ~~~~~~~
 
-Si dans le plan $MSQ$, du point $M$ partent les deux droites $MK, MV$, & du point $S$ partent les deux droites $SK, SV$ ; & que $K$ soit le concours des droites $MK, SK$ ; & $V$ le concours des droites $MV, SV$ ; & $A$ le concours des droites $MK, SV$ ; & $\mu$ le concours des droites $MV, SK$ ; & que par deux des quatre points $A, K, \mu, V$, qui ne soient point en même droite avec les points $M, S$, comme par les points $K, V$, passe une section de cône coupant les droites $MV, MP, SV, SK$ aux points $P, O, N, T$ :
+Si dans le plan :math:`MSQ`, du point :math:`M` partent les deux droites :math:`MK, MV`, & du point :math:`S` partent les deux droites :math:`SK, SV` ; & que :math:`K` soit le concours des droites :math:`MK, SK` ; & :math:`V` le concours des droites :math:`MV, SV` ; & :math:`A` le concours des droites :math:`MK, SV` ; & :math:`\mu` le concours des droites :math:`MV, SK` ; & que par deux des quatre points :math:`A, K, \mu, V`, qui ne soient point en même droite avec les points :math:`M, S`, comme par les points :math:`K, V`, passe une section de cône coupant les droites :math:`MV, MP, SV, SK` aux points :math:`P, O, N, T` :
 
-Je dis que les droites $MS, NO, TP$ sont de même ordre.
+Je dis que les droites :math:`MS, NO, TP` sont de même ordre.
 
 Lemme II
 ~~~~~~~~
@@ -58,7 +58,7 @@ Si par la même droite passent plusieurs plans, qu'ils soient coupés par un aut
 Lemme III (L'Hexagramme Mystique / Théorème de Pascal)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Si dans le plan $MSQ$ sur une section de cône sont pris six points quelconques $P, K, V, O, T, N$, & que l'on trace les droites qui les joignent consécutivement en formant un hexagone cyclique :
+Si dans le plan :math:`MSQ` sur une section de cône sont pris six points quelconques :math:`P, K, V, O, T, N`, & que l'on trace les droites qui les joignent consécutivement en formant un hexagone cyclique :
 
 Les concours des côtés opposés—à savoir le concours du premier et du quatrième côté, celui du deuxième et du cinquième côté, et celui du troisième et du sixième côté—sont tous trois en une même droite : la **droite de Pascal**.
 

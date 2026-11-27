@@ -28,7 +28,7 @@ Essay on Conics
    | **Published As:** *Par B. P. A Paris, M. DC. XL.*
    | **Critical French Text:** Léon Brunschvicg & Pierre Boutroux (*Œuvres de Blaise Pascal*, 1908/1923)
    | **English Translation:** Dr. Frances Marguerite Clarke in D. E. Smith's *A Source Book in Mathematics* (:cite:`1929 <smith:1929>`)
-   | **Exact Symbolic Models:** GEOMETOR (SymPy exact projective arithmetic in $\mathbb{Q}$ and $\mathbb{Q}(\phi)$)
+   | **Exact Symbolic Models:** GEOMETOR (SymPy exact projective arithmetic in :math:`\mathbb{Q}` and :math:`\mathbb{Q}(\phi)`)
 
 ----
 
@@ -52,7 +52,7 @@ Editorial & Historical Provenance
 * **1640 Broadside** — Printed in Paris in February 1640 in approximately 50 copies under the initials **B. P.**, when Blaise Pascal was sixteen years old (*Public Domain*).
 * **Critical Editions** — Léon Brunschvicg, Pierre Boutroux & Félix Blanchet, *Œuvres de Blaise Pascal*, Grands Écrivains de la France, Paris: Hachette, 14 vols., 1908–1923 (*Tome I, pp. 243–260*).
 * **English Translation** — Dr. Frances Marguerite Clarke in David Eugene Smith (ed.), *A Source Book in Mathematics*, New York: McGraw-Hill, 1929, pp. 326–330 (*Public Domain*).
-* **Exact Symbolic Geometry** — Developed in ``geometor.pascal`` using 100% exact rational and algebraic arithmetic over $\mathbb{Q}$ and $\mathbb{Q}(\sqrt{5})$.
+* **Exact Symbolic Geometry** — Developed in ``geometor.pascal`` using 100% exact rational and algebraic arithmetic over :math:`\mathbb{Q}` and :math:`\mathbb{Q}(\sqrt{5})`.
 
 Scholarly Apparatus
 -------------------

@@ -27,7 +27,7 @@ Books in This Collection
 
       .. rubric:: Paris Broadside · February 1640 · 4 Synchronized Tracks · 4 Vector Plates
 
-      **Essay on Conics** (*Essay pour les Coniques*) — The complete 1640 *placard* across **English · French · Summary · Notes**, paired with **4 calibrated interactive vector plates** exploring the Mystic Hexagram, Steiner's 60 Pascal lines, and the golden-ratio $\mathbb{Q}(\phi)$ hexagram.
+      **Essay on Conics** (*Essay pour les Coniques*) — The complete 1640 *placard* across **English · French · Summary · Notes**, paired with **4 calibrated interactive vector plates** exploring the Mystic Hexagram, Steiner's 60 Pascal lines, and the golden-ratio :math:`\mathbb{Q}(\phi)` hexagram.
 
       .. container:: home-actions
 
@@ -55,7 +55,7 @@ Key Features
 
    .. container:: home-feature-card
 
-      **Exact $\mathbb{Q}$ & $\mathbb{Q}(\phi)$ Projective Models**
+      **Exact** :math:`\mathbb{Q}` **&** :math:`\mathbb{Q}(\phi)` **Projective Models**
 
       Interactive plates verify Pascal's line on rational unit-circle configurations, ellipses, Steiner triple concurrences, and golden-section hexagrams in ``geometor.pascal``.
 

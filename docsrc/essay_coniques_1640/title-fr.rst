@@ -23,7 +23,7 @@ Essay pour les Coniques
    | **Auteur :** :person:`Blaise Pascal <pascal>` (1623–1662)
    | **Imprimeur / Format :** Placard in-folio, Paris, février 1640
    | **Texte critique :** Léon Brunschvicg & Pierre Boutroux (*Œuvres de Blaise Pascal*, 1908/1923)
-   | **Modèles symboliques :** GEOMETOR (arithmétique projective exacte sur $\mathbb{Q}$ et $\mathbb{Q}(\phi)$)
+   | **Modèles symboliques :** GEOMETOR (arithmétique projective exacte sur :math:`\mathbb{Q}` et :math:`\mathbb{Q}(\phi)`)
 
 ----
 

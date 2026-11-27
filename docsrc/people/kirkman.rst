@@ -8,4 +8,4 @@ Thomas Penyngton Kirkman
 
 *(1806–1895 · Great Britain)*
 
-British mathematician and clergyman who discovered in 1850 that the 60 Pascal lines concur three-by-three in a second, distinct system of **60 Kirkman points** ($K$), three of which lie on every Pascal line.
+British mathematician and clergyman who discovered in 1850 that the 60 Pascal lines concur three-by-three in a second, distinct system of **60 Kirkman points** (:math:`K`), three of which lie on every Pascal line.
