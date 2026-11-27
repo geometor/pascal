@@ -30,7 +30,7 @@ Essay pour les Coniques
 Table des matières
 ------------------
 
-* **Essay pour les Coniques** *(1640)* — :doc:`French <essay-coniques-fr>` · :doc:`English <essay-coniques-en>` · :doc:`Summary <essay-coniques-summary>` · :doc:`Notes <essay-coniques-notes>`
+* **Essay pour les Coniques** *(1640)* — :doc:`French <essay-coniques/fr>` · :doc:`English <essay-coniques/index>` · :doc:`Summary <essay-coniques/summary>` · :doc:`Notes <essay-coniques/notes>`
 
 Apparat critique
 ----------------

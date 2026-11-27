@@ -44,7 +44,7 @@ Table of Contents
      - Parallel Tracks
    * - **Essay on Conics** *(1640)*
      - Definitions I–III (*ordonnances de lignes*, conics, straight line), Lemmas I–II (harmonic & projective collineation), **Lemma III (The Mystic Hexagram / Pascal's Theorem)**, and Conclusion acknowledging Girard Desargues.
-     - :doc:`English <essay-coniques-en>` · :doc:`French <essay-coniques-fr>` · :doc:`Summary <essay-coniques-summary>` · :doc:`Notes <essay-coniques-notes>`
+     - :doc:`English <essay-coniques/index>` · :doc:`French <essay-coniques/fr>` · :doc:`Summary <essay-coniques/summary>` · :doc:`Notes <essay-coniques/notes>`
 
 Editorial & Historical Provenance
 ----------------------------------
@@ -60,16 +60,6 @@ Scholarly Apparatus
 * :doc:`/people/index` — Biographical register of Pascal, Desargues, Pappus, Apollonius, Steiner, Plücker, and Kirkman.
 * :doc:`/bibliography` — Critical editions and foundational projective treatises.
 * :doc:`/glossary` — Early modern French and projective mathematical terminology.
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-   :caption: Treatise Tracks
-
-   essay-coniques-en
-   essay-coniques-fr
-   essay-coniques-summary
-   essay-coniques-notes
 
 .. toctree::
    :maxdepth: 1

@@ -32,9 +32,9 @@ Books in This Collection
       .. container:: home-actions
 
          * :doc:`Open Essay on Conics → <essay_coniques_1640/index>`
-         * :doc:`Read English Text → <essay_coniques_1640/essay-coniques-en>`
-         * :doc:`Original 1640 French → <essay_coniques_1640/essay-coniques-fr>`
-         * :doc:`Symbolic Notes → <essay_coniques_1640/essay-coniques-notes>`
+         * :doc:`Read English Text → <essay_coniques_1640/essay-coniques/index>`
+         * :doc:`Original 1640 French → <essay_coniques_1640/essay-coniques/fr>`
+         * :doc:`Symbolic Notes → <essay_coniques_1640/essay-coniques/notes>`
 
 Key Features
 ------------
