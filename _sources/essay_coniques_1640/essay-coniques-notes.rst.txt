@@ -43,19 +43,19 @@ In 1676—fourteen years after Pascal's death—:person:`Gottfried Wilhelm Leibn
 Nineteenth-Century Flowering: The 60-Line Web
 ---------------------------------------------
 
-Pascal proved that six points on a conic yield a Pascal line. But six points can be ordered into a cyclic hexagon in $\frac{6!}{2 \cdot 6} = 60$ distinct ways! Does each ordering yield a different line?
+Pascal proved that six points on a conic yield a Pascal line. But six points can be ordered into a cyclic hexagon in :math:`\frac{6!}{2 \cdot 6} = 60` distinct ways! Does each ordering yield a different line?
 
 In the early nineteenth century, the rebirth of synthetic projective geometry led to an explosion of discoveries surrounding this 60-line web:
 
 1. **Charles Julien Brianchon (1806)**: Discovered :person:`Brianchon's theorem <brianchon>`, the projective dual of Pascal's theorem: the three principal diagonals of a hexagon circumscribed about a conic section concur at a single point.
-2. **Jakob Steiner (1828)**: Proved in *Systematische Entwicklung* (:cite:`steiner:1832`) that the 60 Pascal lines concur three-by-three in **20 Steiner points** ($G$). Steiner showed that these correspond to the ten ways of partitioning the six conic points into two complementary triangles $\triangle_A$ and $\triangle_B$, with each partition generating two Steiner points (associated with the alternating group $A_3$ and coset $S_3 \setminus A_3$).
+2. **Jakob Steiner (1828)**: Proved in *Systematische Entwicklung* (:cite:`steiner:1832`) that the 60 Pascal lines concur three-by-three in **20 Steiner points** (:math:`G`). Steiner showed that these correspond to the ten ways of partitioning the six conic points into two complementary triangles :math:`\triangle_A` and :math:`\triangle_B`, with each partition generating two Steiner points (associated with the alternating group :math:`A_3` and coset :math:`S_3 \setminus A_3`).
 3. **Julius Plücker (1830)**: Proved (:cite:`pluecker:1830`) that the 20 Steiner points lie four-by-four on **15 Plücker lines**.
-4. **Thomas Penyngton Kirkman (1850)**: Discovered (:cite:`kirkman:1850`) that the 60 Pascal lines concur three-by-three in a *second*, distinct way at **60 Kirkman points** ($K$), with three Kirkman points lying on every Pascal line.
+4. **Thomas Penyngton Kirkman (1850)**: Discovered (:cite:`kirkman:1850`) that the 60 Pascal lines concur three-by-three in a *second*, distinct way at **60 Kirkman points** (:math:`K`), with three Kirkman points lying on every Pascal line.
 5. **George Salmon & Arthur Cayley (1850s)**: Unified the Steiner and Kirkman configurations into the complete self-dual incidence structure of the *Hexagrammum Mysticum*, showing that the 60 Kirkman points lie three-by-three on 20 Cayley–Salmon lines.
 
 Relation to Pappus of Alexandria
 --------------------------------
 
-The archetype of Pascal's theorem is :person:`Pappus of Alexandria's <pappus>` Hexagon Theorem (*Synagoge* VII.139, c. 340 CE). Pappus established collinearity for six points distributed three-and-three along two straight lines $a$ and $b$.
+The archetype of Pascal's theorem is :person:`Pappus of Alexandria's <pappus>` Hexagon Theorem (*Synagoge* VII.139, c. 340 CE). Pappus established collinearity for six points distributed three-and-three along two straight lines :math:`a` and :math:`b`.
 
-In projective geometry, two intersecting lines form a **degenerate conic section** $L_a(x, y) \cdot L_b(x, y) = 0$. When the conic is smooth (circle or ellipse), all 60 hexagons are non-degenerate, producing 60 Pascal lines and 20 Steiner points. When the conic degenerates into two lines $a \cup b$, 54 of the 60 orderings degenerate or collapse onto the carrier lines, leaving exactly the **6 Pappus lines** and **2 Steiner Star points** $(S_+, S_-)$ of the Pappus–Steiner theorem.
+In projective geometry, two intersecting lines form a **degenerate conic section** :math:`L_a(x, y) \cdot L_b(x, y) = 0`. When the conic is smooth (circle or ellipse), all 60 hexagons are non-degenerate, producing 60 Pascal lines and 20 Steiner points. When the conic degenerates into two lines :math:`a \cup b`, 54 of the 60 orderings degenerate or collapse onto the carrier lines, leaving exactly the **6 Pappus lines** and **2 Steiner Star points** :math:`(S_+, S_-)` of the Pappus–Steiner theorem.

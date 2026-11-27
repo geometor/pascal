@@ -26,7 +26,7 @@ Technical lexicon of early modern French projective terminology, classical Greek
 
    point de steiner
    steiner point
-      One of twenty points in the *Hexagrammum Mysticum* web at which three Pascal lines concur, discovered by Jakob Steiner in 1828. Arises by partitioning the six conic vertices into two complementary triangles $\triangle_A$ and $\triangle_B$ and permuting the vertices by the alternating group $A_3$ or coset $S_3 \setminus A_3$.
+      One of twenty points in the *Hexagrammum Mysticum* web at which three Pascal lines concur, discovered by Jakob Steiner in 1828. Arises by partitioning the six conic vertices into two complementary triangles :math:`\triangle_A` and :math:`\triangle_B` and permuting the vertices by the alternating group :math:`A_3` or coset :math:`S_3 \setminus A_3`.
 
    point de kirkman
    kirkman point
@@ -38,8 +38,8 @@ Technical lexicon of early modern French projective terminology, classical Greek
 
    birapport
    cross-ratio
-      The fundamental projective invariant of four collinear points $(A, B; C, D) = \frac{AC \cdot BD}{CB \cdot DA}$, or four concurrent rays, invariant under central projection, perspectivities, and central projections from any point on a conic (Michel Chasles, 1865).
+      The fundamental projective invariant of four collinear points :math:`(A, B; C, D) = \frac{AC \cdot BD}{CB \cdot DA}`, or four concurrent rays, invariant under central projection, perspectivities, and central projections from any point on a conic (Michel Chasles, 1865).
 
    section de cône
    conic section
-      A curve formed by intersecting a circular cone by a plane: circle, ellipse, parabola, hyperbola, or degenerate line-pair. In projective geometry $\mathbb{P}^2$, all non-degenerate conics are projectively equivalent to the circle.
+      A curve formed by intersecting a circular cone by a plane: circle, ellipse, parabola, hyperbola, or degenerate line-pair. In projective geometry :math:`\mathbb{P}^2`, all non-degenerate conics are projectively equivalent to the circle.
